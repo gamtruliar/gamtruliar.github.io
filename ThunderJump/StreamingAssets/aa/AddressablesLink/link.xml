@@ -18,7 +18,7 @@
     <type fullname="Script.CommonLib.UI.TabManager" preserve="all" />
     <type fullname="UIRoot" preserve="all" />
     <type fullname="UnityEngine.UI.Extensions.NonDrawingGraphic" preserve="all" />
-    <type fullname="WebGLKeyboard.DetectInputFocus" preserve="all" />
+    <type fullname="WebGLSupport.WebGLInput" preserve="all" />
   </assembly>
   <assembly fullname="UIEffect, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="Coffee.UIEffects.UITransitionEffect" preserve="all" />
