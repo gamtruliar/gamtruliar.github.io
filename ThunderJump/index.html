@@ -6,9 +6,8 @@
     <title>ThunderJump</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-  </head>
-  <body>
-  
+  <script src='js/jquery-3.6.0.min.js'></script><script src='js/webglKBFix.js'></script></head>
+  <body><div id="kbfixuse"></div>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=506 height=900></canvas>
       <div id="unity-loading-bar">
@@ -18,7 +17,7 @@
         </div>
       </div>
       <div id="unity-warning"> </div>
-<div>仲整緊....wait...</div>
+<div> 偷跑, 其實仲整緊w </div>
     </div>
     <script>
       var container = document.querySelector("#unity-container");
@@ -104,6 +103,8 @@
         createUnityInstance(canvas, config, (progress) => {
           progressBarFull.style.width = 100 * progress + "%";
         }).then((unityInstance) => {
+KBFix(unityInstance);
+
           loadingBar.style.display = "none";
          
         }).catch((message) => {
