@@ -10,9 +10,14 @@
     <type fullname="NWCSGame.UI.DebugButton" preserve="all" />
     <type fullname="NWCSGame.UI.DebugPanel" preserve="all" />
     <type fullname="NWCSGame.UI.Main.LoadingPanel" preserve="all" />
+    <type fullname="NWCSGame.UI.Main.MessageBoxPanel" preserve="all" />
     <type fullname="NWCSGame.UI.Main.SmallLoadingPanel" preserve="all" />
     <type fullname="NWCSGame.UI.Main.ToastPanel" preserve="all" />
     <type fullname="NWCSGame.UI.MainPanel" preserve="all" />
+    <type fullname="NWCSGame.UI.Setting.AboutPanel" preserve="all" />
+    <type fullname="NWCSGame.UI.Setting.SettingPanel" preserve="all" />
+    <type fullname="NWCSGame.UI.Setting.SoundSettingPanel" preserve="all" />
+    <type fullname="Ricimi.Popup" preserve="all" />
     <type fullname="Ricimi.SpriteSwapper" preserve="all" />
     <type fullname="Script.CommonLib.UGUI.TabUnit" preserve="all" />
     <type fullname="Script.CommonLib.UI.TabManager" preserve="all" />
@@ -62,6 +67,7 @@
   <assembly fullname="UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.AnimationClip" preserve="all" />
     <type fullname="UnityEngine.Animator" preserve="all" />
+    <type fullname="UnityEngine.AnimatorOverrideController" preserve="all" />
     <type fullname="UnityEngine.Avatar" preserve="all" />
     <type fullname="UnityEngine.RuntimeAnimatorController" preserve="all" />
   </assembly>
@@ -115,6 +121,7 @@
     <type fullname="UnityEngine.UI.Scrollbar" preserve="all" />
     <type fullname="UnityEngine.UI.ScrollRect" preserve="all" />
     <type fullname="UnityEngine.UI.Shadow" preserve="all" />
+    <type fullname="UnityEngine.UI.Slider" preserve="all" />
     <type fullname="UnityEngine.UI.Text" preserve="all" />
     <type fullname="UnityEngine.UI.VerticalLayoutGroup" preserve="all" />
     <type fullname="UnityEngine.UI.AnimationTriggers" preserve="nothing" serialized="true" />
@@ -128,6 +135,7 @@
     <type fullname="UnityEngine.UI.Navigation" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.ScrollRect/ScrollRectEvent" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.Scrollbar/ScrollEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.Slider/SliderEvent" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.SpriteState" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
