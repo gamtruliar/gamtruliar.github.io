@@ -2,6 +2,7 @@
   <assembly fullname="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="CatView" preserve="all" />
     <type fullname="EffectView" preserve="all" />
+    <type fullname="HitNumberView" preserve="all" />
     <type fullname="NWCSGame.JumperView" preserve="all" />
     <type fullname="NWCSGame.UI.Battle.BattlePanel" preserve="all" />
     <type fullname="NWCSGame.UI.Battle.BattleResultPanel" preserve="all" />
