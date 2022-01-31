@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | SayaJump</title>
+    <title>ThunderJump</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-  </head>
-  <body>
+  <script src='js/jquery-3.6.0.min.js'></script><script src='js/infoInject.js'></script></head>
+  <body><div id="kbfixuse"></div>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=506 height=900></canvas>
       <div id="unity-loading-bar">
@@ -17,18 +17,15 @@
         </div>
       </div>
       <div id="unity-warning"> </div>
-      <div id="unity-footer">
-        <div id="unity-webgl-logo"></div>
-        <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">SayaJump</div>
-      </div>
+	  <div id="infoInject"></div>
+
     </div>
     <script>
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
       var loadingBar = document.querySelector("#unity-loading-bar");
       var progressBarFull = document.querySelector("#unity-progress-bar-full");
-      var fullscreenButton = document.querySelector("#unity-fullscreen-button");
+
       var warningBanner = document.querySelector("#unity-warning");
 
       // Shows a temporary message banner/ribbon for a few seconds, or
@@ -56,11 +53,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/tb1_bro.loader.js";
+      var loaderUrl = buildUrl + "/tb1.loader.js";
       var config = {
-        dataUrl: buildUrl + "/tb1_bro.data.br",
-        frameworkUrl: buildUrl + "/tb1_bro.framework.js.br",
-        codeUrl: buildUrl + "/tb1_bro.wasm.br",
+        dataUrl: buildUrl + "/tb1.data",
+        frameworkUrl: buildUrl + "/tb1.framework.js",
+        codeUrl: buildUrl + "/tb1.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "SayaJump",
@@ -91,7 +88,7 @@
         canvas.style.width = window.innerWidth + 'px';
         canvas.style.height = window.innerHeight + 'px';
 
-        unityShowBanner('WebGL builds are not supported on mobile devices.');
+        //unityShowBanner('WebGL builds are not supported on mobile devices.');
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
@@ -107,10 +104,10 @@
         createUnityInstance(canvas, config, (progress) => {
           progressBarFull.style.width = 100 * progress + "%";
         }).then((unityInstance) => {
+KBFix(unityInstance);
+
           loadingBar.style.display = "none";
-          fullscreenButton.onclick = () => {
-            unityInstance.SetFullscreen(1);
-          };
+         
         }).catch((message) => {
           alert(message);
         });
