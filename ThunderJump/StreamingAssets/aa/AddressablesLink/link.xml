@@ -1,6 +1,7 @@
 <linker>
   <assembly fullname="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="CatView" preserve="all" />
+    <type fullname="CommonLib.UI.LocalUIText" preserve="all" />
     <type fullname="EffectView" preserve="all" />
     <type fullname="HitNumberView" preserve="all" />
     <type fullname="NWCSGame.JumperView" preserve="all" />
@@ -16,6 +17,7 @@
     <type fullname="NWCSGame.UI.Main.ToastPanel" preserve="all" />
     <type fullname="NWCSGame.UI.MainPanel" preserve="all" />
     <type fullname="NWCSGame.UI.Setting.AboutPanel" preserve="all" />
+    <type fullname="NWCSGame.UI.Setting.LangSettingPanel" preserve="all" />
     <type fullname="NWCSGame.UI.Setting.SettingPanel" preserve="all" />
     <type fullname="NWCSGame.UI.Setting.SoundSettingPanel" preserve="all" />
     <type fullname="Ricimi.Popup" preserve="all" />
